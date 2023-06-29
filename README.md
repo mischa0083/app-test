@@ -31,13 +31,13 @@ I made heavy use of Railway's GraphiQL playground to explore the schema, in orde
 ```graphql
 query getProjects{
   projects {
-		edges {
-          node {
-            name
-            id
-            }
-        }
+    edges {
+      node {
+        name
+        id
+      }
     }
+  }
 }
 ```
 
@@ -45,15 +45,15 @@ query getProjects{
 
 ```graphql
 query getDeployments{
-    deployments(input: {projectId: "$PROJECT_ID"}) {
-        edges {
-        node {
-            staticUrl
-            id
-            status
-            }
-        }
+  deployments(input: {projectId: "$PROJECT_ID"}) {
+    edges {
+      node {
+        staticUrl
+        id
+        status
+      }
     }
+  }
 }
 ```
 
