@@ -11,7 +11,7 @@ This repository contains a Python script to walk through the Railway Projects an
 ## Quickstart
 
 1. Download `get_deployment_logs.py`.
-2. Run Python script by executing command-line execution `python3 /PATH/TO/get_deployment_logs.py`
+2. Run the `get_deployment_logs.py` Python script by executing command-line execution `python3 /PATH/TO/get_deployment_logs.py`
 3. Enter personal API key from your Railway account when prompted, it should attempt to fetch the available Railway Projects for that API key
 4. Enter the id of the Project of your choice to see the available Deployments when prompted, it should attempt to fetch the available Railway Deployments for that Project
 5. Enter the id of the Deployment of your choice to download the deployment logs when prompted, it should attempt to fetch and pipe the deployment logs to a file (formatted: `DEPLOYMENT_ID_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND.txt`)
@@ -22,7 +22,7 @@ Example:
 
 ## GraphQL Queries
 
-I made heavy use of Railway's GraphiQL playground to explore the schema, in order to utilize this to explore yourself you will need to add your API key to the `Header` section in the GraphiQL web UI:
+I made heavy use of Railway's [GraphiQL playground](http://railway.app/graphiql) to explore the schema, in order to utilize this to explore yourself you will need to add your API key to the `Header` section in the GraphiQL web UI:
 
 ![GraphiQL header value example screenshot](./graphiql-api-key.png)
 
