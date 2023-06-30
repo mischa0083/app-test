@@ -78,7 +78,7 @@ deployment_id = input("\nEnter the id of the deployment you want to download log
 
 # Define a query to get deployment logs using deployment id
 queryGetDeploymentLogs = """
-query {
+query getDeploymentLogs{
   deploymentLogs(deploymentId: "%s") {
     timestamp
     severity
