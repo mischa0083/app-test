@@ -60,7 +60,7 @@ query getDeployments{
 ### Get Deployment Logs (`Query.deploymentLogs`)
 
 ```graphql
-query {
+query getDeploymentLogs{
   deploymentLogs(deploymentId: "$DEPLOYMENT_ID") {
     timestamp
     severity
